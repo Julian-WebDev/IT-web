@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="text-center">
+    <h2 class="h1 text">@ViewBag.Message</h2>
+    <a href="@Url.Action("Index", "Home")">Go to Home Page</a>
+</div>
+<script>
+    let responseURL = '@Url.Action("ProcessExcelFile", "Excel")';
+</script>
+@Scripts.Render("~/Scripts/Proyect JS Scripts/ExcelReader/Index.js")

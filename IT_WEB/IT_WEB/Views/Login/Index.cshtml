@@ -1,0 +1,67 @@
+﻿
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    @* Typography *@
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body style="background: #2C3E50;">
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center">
+        <div class="rounded-3 bg-light">
+            <div class="m-5">
+                <form class="" id="login_form">
+                    <div class="mb-5 text-center">
+                        <h1 class="h1">Login</h1>
+                    </div>
+                    <div class="mb-5">
+                        <label for="u_email">Username</label>
+                        <input type="text" placeholder="example@inthenetwork.com" id="email" name="username" class="form-control" value="admin@inthenetwork.com">
+                    </div>
+                    <div class="mb-2">
+                        <div class="input-group">
+                            <label for="u_password">Password</label>
+                        </div>
+                        <input type="password" placeholder="Password" id="password" name="password" class="form-control" value="cisco123">
+                    </div>
+                    <div class="mb-5">
+                        <a href="#" class="align-content-end">Forgot Password?</a>
+                    </div>
+                    <div class="mb-5 col text-center">
+                        <button type="submit" class="btn btn-outline-dark" id="btn_login">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    @* Sweet alert *@
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    @* URLs *@
+    <script>
+        let loginURL = '@Url.Action("Validate", "Login")'
+        let homeURL = '@Url.Action("Index", "Home")';
+    </script>
+
+    @* JS File reference *@
+    @Scripts.Render("~/Scripts/Proyect JS Scripts/Login/Index.js")
+</body>
+</html>

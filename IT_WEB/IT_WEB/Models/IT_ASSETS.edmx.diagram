@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a2d4898ca122431996dfe486eca058cb" Name="Diagram1" ZoomLevel="109">
+        <EntityTypeShape EntityType="IT_Assets_Model.CR_IT_COMBOS" Width="1.5" PointX="7.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IT_Assets_Model.T_CATEGORY" Width="1.5" PointX="9" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="IT_Assets_Model.T_ADMINS" Width="1.5" PointX="5.75" PointY="0.5" />
+        <EntityTypeShape EntityType="IT_Assets_Model.ATL_IT_ASSETS" Width="1.5" PointX="0.875" PointY="0.5" />
+        <EntityTypeShape EntityType="IT_Assets_Model.CR_IT_ASSETS" Width="1.5" PointX="2.5" PointY="0.5" />
+        <EntityTypeShape EntityType="IT_Assets_Model.PNQ_IT_ASSETS" Width="1.5" PointX="4.125" PointY="0.5" />
+        <EntityTypeShape EntityType="IT_Assets_Model.T_IT_ASSETS" Width="1.5" PointX="10.625" PointY="0.5" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
